@@ -18,7 +18,12 @@ def main():
 
     print(frase_2)
     # TODO: Use  o método substitute com um dicionário
-
+    dados = {
+        "curso": "Python Avançado",
+        "plataforma": "Linkedin Learning"
+    }
+    frase_3 = templ.substitute(dados)
+    print(frase_3)
 
 if __name__ == "__main__":
     main()
