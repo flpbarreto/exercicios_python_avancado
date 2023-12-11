@@ -1,9 +1,15 @@
 # Usando docstrings para documentar métodos
 
 
-def minha_funcao():
-    pass
+def minha_funcao(arg1, arg2=None):
+    """Minha função faz o print dos argumentos passados
 
+    Params:
+        arg1: primeiro argumento, algo interessante.
+        arg2: segundo argumento, Default: None.
+    
+    """
+    print(arg1, arg2)
 
 def main():
     print(minha_funcao.__doc__)
