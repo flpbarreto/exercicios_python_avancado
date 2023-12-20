@@ -13,11 +13,15 @@ def main():
     times_ord = sorted(times_fut, key=lambda t: t[1][0], reverse=True)
 
     # TODO: Crie um dicionário ordenado com os times
-
+    times = OrderedDict(times_ord)
+    #print(times)
     # TODO: Use popitem para remover o item do topo
-
+    nome, estatistica = times.popitem(False)
+    #print("Time masi vitorioso: ", nome, estatistica)
     # TODO: Faça um teste de igualdade
-
+    a = OrderedDict({"a": 1, "b": 2, "c": 3})
+    b = OrderedDict({"a": 1, "b": 2, "c": 3})
+    print("Teste de igualdade: ", a == b)
 
 if __name__ == "__main__":
     main()
